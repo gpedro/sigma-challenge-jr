@@ -11,9 +11,11 @@ export default props => {
         return list.map(lista => (
             <div className='row' key={lista.cargo.codigo}>
                     <h3 className='tituloLista'><strong>Candidatos à {lista.cargo.nome}</strong></h3>
-                    {candidatos.map(candidato => (
-                        <CandidatoCard candidato={candidato} key={candidato.id} />
-                    ))}
+                    {candidatos.map(candidato => {
+                        if(lista.cargo.codigo == candidato.cargo.codigo){
+                            return(<CandidatoCard candidato={candidato} key={candidato.id} />)
+                        }
+                    })}
             </div>
         ))
     }

@@ -49,7 +49,6 @@ export default class Candidatos extends Component{
             candidatos.push(b)
         }))
         const filteredCandidatos = candidatos.filter(createFilter(this.state.searchTerm, KEYS_TO_FILTERS))
-        console.log(filteredCandidatos)
 
         if(error){
             return <p>{error.message}</p>
