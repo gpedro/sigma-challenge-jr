@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,300,400');
+
+body{
+    font-family: 'Montserrat', 'sans-serif';
+    box-sizing: border-box;
+}
+
+#bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../images/brazil.png');
+    background-repeat: no-repeat;
+    background-size: 70em;
+    background-position: 120%;
+    background-attachment: scroll;
+    width: 100%;
+    height: 100%;
+    opacity : 0.03;
+    z-index: -1;
+}
+
+.fotoCircular img{
+    width: 170px;
+    height: 170px;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 100%;
+    border: 6px solid rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 1200px) {
+    .candidatoHeader{
+        margin-right: 2%;
+    }
+}
+
+.candidatoCard {
+    width: 100%;
+    max-width: 140px;
+    height: 340px;
+    background-color: white;
+    margin-bottom: 10%;
+    margin-right: -100%;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.1);  
+}
+
+.candidatoCard:hover {
+    box-shadow: 0 2px 16px 2px rgba(0,0,0,0.2);
+}
+
+.candidatoCardMargin{
+    margin-right: -4%;
+}
+
+.linkVoltar{
+    margin-top: 3%;
+    margin-bottom: 7%;
+    font-size: 1.3em;
+}
+
+.candidatoCard p{
+    text-align: center;
+}
+
+.candidatoCard img{
+    width: 100%;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 10%;
+}
+
+.candidatoCardNome{
+    font-size: 1em;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.candidatoCardPartido{
+    font-size: 0.8em;
+}
+
+.candidatoCardNumero{
+    font-size: 1.5em;
+}
+
+#header{
+    text-align: center;
+    font-weight: 100;
+    font-size: 4.5em;
+}
+
+.tituloLista{
+    font-weight: 300;
+    font-size: 1.8em;
+    margin-bottom: 3%;
+}
+
+#hrHeader{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+}
+
+.btn{
+    margin-right: 5px;
+}
+
+.override{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+}
+
+.markedAsDone{
+    text-decoration: line-through;
+    color: #777;
+}
+
+.tableActions{
+    width: 105px;
+}
+
+.todoForm{
+    padding-bottom: 60px;
+}
+
+a{
+    color: inherit;
+}
+
+.search-input {
+    padding: 10px 10px;
+    height: 52px;
+    position: relative;
+    float: right;
+  }
+  
+  .search-input::before {
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAAAXNSR0IArs4c6QAAAQJJREFUKBWVkr2uQUEUhf3ET6GRaC5aFRoJKrf1BKpb8SwqovYGXkCj00k0QnRKEYkILYobvpUYmeMMyVnJl7P3mjN7Zu9zwiGv2qRFyMMSRrAFp6JPN8XzBj+wgDkUYAg7WINTYdwpDECxrRLJHeq2accdkgm8bzTvNAg2EDOGeUYI1KNO1gkuzTA1g8T7ojbn4ONQWPuHPWgeHmnzCqoe15tkSNPgPEAn68oVcOmA2XMtGK9FoE/VhOTTVNExqLCGZnxCv2pYauEC6lF0oQxX6IOvb7yX9NPEQafan+aPXDdQC18LsO6Tip5BBY6gIQaSbnMCFRCBZRcIvFkbsvCr4AFGOCxQy+JdGQAAAABJRU5ErkJggg==');
+    display: block;
+    position: absolute;
+    width: 15px;
+    z-index: 3;
+    height: 15px;
+    font-size: 20px;
+    top: 11px;
+    left: 16px;
+    line-height: 32px;
+    opacity: 0.6;
+  }
+  
+  .search-input > input {
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    line-height: 22px;
+    padding: 5px 10px 5px 25px;
+    height: 32px;
+    position: relative;
+  }
