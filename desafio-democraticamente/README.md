@@ -6,7 +6,7 @@ Crie uma aplicação Web utilizando a API do TSE (Tribunal Superior Eleitoral) c
 
 * Use o npm install para instalar os pacotes necessários
 * De start no projeto usando o comando npm run dev
-* A página vai estar funcionando em (http://localhost:8000)
+* A página vai estar funcionando em (http://localhost:8080)
 
 ### Considereções
 
